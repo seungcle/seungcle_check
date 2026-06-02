@@ -7,7 +7,6 @@ from .env_check import check_env
 from .python_env_check import check_python_env
 from .todo_check import check_todos
 from .cache_check import check_cache
-from .nodejs_check import check_nodejs
 from .structure_check import check_structure
 
 
@@ -22,6 +21,5 @@ def run_all_checks(path: Path) -> list[CheckResult]:
         check_python_env(path),
         check_todos(path),
         check_cache(path),
-        check_nodejs(path),
         check_structure(path),
     ]

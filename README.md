@@ -77,7 +77,6 @@ No tests directory or test files found.
 | Python Environment | 가상환경, 의존성 파일 |
 | TODO / FIXME | 전체 코드에서 TODO / FIXME / HACK / TEMP 카운트 |
 | Python Cache | \_\_pycache\_\_, .pytest_cache |
-| Node.js | node_modules, lockfile |
 | Project Structure | src/, tests/ 디렉토리 |
 
 ## 요구사항

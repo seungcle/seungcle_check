@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "seungcle-check"
-version = "0.1.0"
+version = "0.1.1"
 description = "개발자의 현실을 직시하게 만드는 CLI 도구"
 readme = "README.md"
 license = { text = "MIT" }
