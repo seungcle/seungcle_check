@@ -10,7 +10,7 @@
 ## 설치
 
 ```bash
-pip install seungcle-realitycheck
+pip install seungcle-check
 ```
 
 ## 사용법
