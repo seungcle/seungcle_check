@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "PowerShell(Get-ChildItem *)",
-      "PowerShell($env:PYTHONUTF8 = \"1\"; realitycheck \"C:\\\\Users\\\\main\\\\Desktop\\\\private_project\\\\pip_test1\")",
-      "PowerShell(realitycheck \"C:\\\\Users\\\\main\\\\Desktop\\\\private_project\\\\test_target\")"
-    ]
-  }
-}
