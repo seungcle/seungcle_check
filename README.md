@@ -1,9 +1,11 @@
-# seungcle-realitycheck
+# seungcle-check
+
+[![PyPI](https://img.shields.io/pypi/v/seungcle-check)](https://pypi.org/project/seungcle-check/)
+[![Python](https://img.shields.io/pypi/pyversions/seungcle-check)](https://pypi.org/project/seungcle-check/)
 
 개발자의 현실을 직시하게 만드는 CLI 도구.
 
 프로젝트 폴더를 분석해서 나중에 후회할 것들을 미리 알려줍니다.  
-점수도 없고, 위험도 수치도 없습니다. 그냥 사실 그대로입니다.
 
 ---
 
@@ -16,8 +18,9 @@ pip install seungcle-check
 ## 사용법
 
 ```bash
-seungcle-check .
-seungcle-check ./my-project
+seungcle-check                 # 현재 디렉토리 분석
+seungcle-check ./my-project    # 특정 경로 분석
+seungcle-check -v              # 버전 확인
 ```
 
 ## 출력 예시
@@ -44,15 +47,6 @@ README.md not found.
 
 ────────────────────────────────────────────────────
 
-[TODO / FIXME]
-
-Total: 37  (TODO: 25,  FIXME: 8,  HACK: 3,  TEMP: 1)
-
-TODO가 37개입니다.
-이쯤 되면 TODO가 주석이 아니라 일정입니다.
-
-────────────────────────────────────────────────────
-
 [PROJECT STRUCTURE]
 
 No tests directory or test files found.
@@ -75,7 +69,6 @@ No tests directory or test files found.
 | .gitignore | 존재 여부, 누락 항목 감지 |
 | Environment Variables | .env 감지, gitignore 누락, git tracking 여부 |
 | Python Environment | 가상환경, 의존성 파일 |
-| TODO / FIXME | 전체 코드에서 TODO / FIXME / HACK / TEMP 카운트 |
 | Python Cache | \_\_pycache\_\_, .pytest_cache |
 | Project Structure | src/, tests/ 디렉토리 |
 

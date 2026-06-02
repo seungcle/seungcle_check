@@ -1,9 +1,15 @@
 import argparse
 import sys
 import io
+from importlib.metadata import version, PackageNotFoundError
 from pathlib import Path
 from .checks import run_all_checks
 from .output import print_header, print_result, print_footer
+
+try:
+    __version__ = version("seungcle-check")
+except PackageNotFoundError:
+    __version__ = "unknown"
 
 
 def _fix_win_encoding() -> None:
@@ -21,9 +27,10 @@ def main() -> None:
     _fix_win_encoding()
 
     parser = argparse.ArgumentParser(
-        prog="realitycheck",
-        description="개발자의 현실을 직시하게 만드는 도구",
+        prog="check",
+        description=f"개발자의 현실을 직시하게 만드는 도구 v{__version__}",
     )
+    parser.add_argument("-v", "--version", action="version", version=f"%(prog)s {__version__}")
     parser.add_argument(
         "path",
         nargs="?",
