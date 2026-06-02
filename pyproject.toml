@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "seungcle-realitycheck"
+version = "0.1.0"
+description = "개발자의 현실을 직시하게 만드는 CLI 도구"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/seungcle/seungcle_check"
+
+[project.scripts]
+seungcle-check = "realitycheck.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/realitycheck"]
