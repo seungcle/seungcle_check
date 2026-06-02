@@ -27,7 +27,7 @@ seungcle-check -v              # 버전 확인
 
 ```
   seungcle realitycheck
-  현실 점검 대상: /my-project
+  폴더 점검 대상: /my-project
 ────────────────────────────────────────────────────
 
 [GIT]
@@ -55,7 +55,7 @@ No tests directory or test files found.
 
 ────────────────────────────────────────────────────
 
-현실 점검이 완료되었습니다.
+검사가 완료되었습니다.
 ```
 
 ## 검사 항목
