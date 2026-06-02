@@ -1,10 +1,10 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [project]
 name = "seungcle-check"
-version = "0.1.1"
+dynamic = ["version"]
 description = "개발자의 현실을 직시하게 만드는 CLI 도구"
 readme = "README.md"
 license = { text = "MIT" }
@@ -16,6 +16,9 @@ Homepage = "https://github.com/seungcle/seungcle_check"
 
 [project.scripts]
 seungcle-check = "realitycheck.cli:main"
+
+[tool.hatch.version]
+source = "vcs"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/realitycheck"]
